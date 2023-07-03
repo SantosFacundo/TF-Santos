@@ -1,0 +1,43 @@
+
+/* HEADER UTILIZADO EN CONTACTO,SERVICIOS Y NOTICIAS*/
+.header_snc{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(179, 41, 41, 0) 15%, rgb(255, 0, 0)) 80%, url("../assets/bg.jpg");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+
+    
+    img{
+        margin: 2rem 2rem;
+        height: 50%;
+    }
+
+    nav{
+        width: 60%;
+        ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    header{
+
+        nav{
+            width: 100%;
+        }
+    }
+
+}

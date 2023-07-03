@@ -1,0 +1,36 @@
+
+/* HEADER UTILIZADO EN EL INDEX Y EN SOBRE-MI*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+
+    img{
+        margin: auto 1rem;
+        height: 80%;
+    }
+
+    nav{
+        width: 60%;
+        ul{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            li{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px){
+    header{
+
+        nav{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+/* ESTILOS GENERALES DEL FOOTER,MISMO EN TODAS LAS PAGES*/
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+    height: 40vh;
+    .footer__title{
+        display: flex;
+        img{
+            width: 4rem;
+        }
+        h2{
+            margin: auto 0;
+            font-size: 1.5rem;
+        }
+    }
+
+    .derechos__reservados{
+        font-family: $font-title;
+        font-weight: 100;
+        font-size: 0.8rem;
+        margin-left: 60px;
+    }
+    .redes__sociales{
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+        padding: 0.5rem;
+        gap: 1rem;
+        i{
+            margin: auto 0;
+            color: white;
+
+            &:hover{
+                color: #bb1919;
+            }
+        }
+    }
+}

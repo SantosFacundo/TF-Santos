@@ -1,0 +1,90 @@
+/* ESTILO GNRAL SERVICIOS */
+.main__servicios{
+    min-height: 100vh;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    box-shadow: inset 0px 25px 25px -25px rgba(255, 20, 20, 0.679);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+.card__title{
+    text-align: center;
+    font-family: $font-title;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #bb1919e1;
+   text-shadow: 2px 2px rgba(0, 0, 0, 0.57); 
+ }
+ 
+ /* ESTILOS AL DIV DE SERVICIOS */
+ .card__div{
+    display: flex;
+    justify-content: space-around;
+
+.card__element{
+    width: 30%;
+    height: 50vh;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    }
+  } 
+
+  button{
+    width: 50%;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #bb1919;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    color: white;
+    filter: brightness(100%);
+    font-family: $font-text;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover{
+        background-color: #0a0022;
+        }
+    }
+
+    /* ESTILOS Y LINK DE IMG*/
+.bg__suplementos{
+    background: url(../../assets/suplementacion.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+.bg__entrenamientos-personalizados{
+    background: url(../../assets/entrenamiento\ personalizado.jpg);
+    background-size: cover;
+}
+.bg__app{
+    background: url(../../assets/Rutinas\ online.jpg);
+    background-size: cover;
+}
+
+/* MEDIA QUERY*/
+@media (max-width: 768px){
+    .card__title{
+        margin-top: 3%;
+    }
+        .card__div{
+            flex-direction: column;
+            align-items: center;
+        
+            .card__element{
+            margin: 2rem;
+            width: 80%;
+            
+          }
+        
+        }
+    }
+}
+
+

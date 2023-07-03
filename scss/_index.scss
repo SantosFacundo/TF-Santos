@@ -1,0 +1,185 @@
+/* ESTILOS DEL INDEX GENERALES*/
+.main__inicio{
+    display: flex;
+    height: 80vh;
+    
+
+    .card__image {
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .card__body {
+        width: 50%;
+        margin: auto 1rem;
+
+        .card__title {
+            font-family: $font-title;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.639);
+
+            span {
+                color: #ce0d0d;
+            }
+        }
+
+        .card__p {
+            font-family: $font-text;
+            font-weight: 200;
+            margin-right: 2rem;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px black;
+        }
+    }
+}
+/* ESTILOS DEL SECTION */
+.section__nav {
+    min-height: 100vh;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    box-shadow: inset 0px 25px 25px -25px rgba(255, 20, 20, 0.679);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .section__title{
+
+        h2{
+            text-align: center;
+            font-family: $font-title;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #bb1919;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.57);
+        }
+        h3{
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: $font-text;
+            font-weight: 200;
+        }
+    }
+
+/* ESTILOS Y LINK DE IMG*/
+    .nav__container{
+        display: flex;
+        justify-content: space-around;
+
+        .nav__element{
+            
+            width: 25%;
+            height: 50vh;
+            background-color: #ce0d0d;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px rgb(0, 0, 0);
+
+            button{
+                width: 50%;
+                height: 3rem;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: #bb1919;
+                box-shadow: 0 0 20px rgb(0, 0, 0);
+                color: white;
+                filter: brightness(100%);
+                font-family: $font-text;
+                font-weight: 300;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: all .3s;
+
+                &:hover{
+                    background-color: #0a0022;
+                }
+            }
+
+        }
+
+        .bg__sobremi{
+            background: url("../../assets/correccion.jpg");
+            background-size: cover;
+            
+            &:hover{
+                background-size: 130% 120%;
+                transition: 1s;
+            }
+
+        }
+        .bg__servicios{
+            background: url("../../assets/planilla.jpg");
+            background-size: cover;
+            
+            &:hover{
+                background-size: 130% 120%;
+                transition: 1s;
+            }
+
+        }
+        .bg__noticias{
+            background: url("../../assets/alimentacion.png");
+            background-size: cover;
+            background-position-x: -130px;
+           
+            &:hover{
+                background-size: 140% 120%;
+                transition: 1s;
+            }
+         }
+        }
+    } 
+
+    
+/* MEDIA QUERY*/
+
+@media (max-width: 980px) {
+    .main__inicio {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+
+        .card__image {
+            img {
+                height: 50%;
+                width: 100%;
+            }
+        }
+
+        .card__body {
+            width: 90%;
+
+            .card__title {
+                text-align: center;
+            }
+
+            .card__p {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .section__nav {
+    
+        .nav__container{
+            flex-direction: column;
+            align-items: center;
+            
+    
+            .nav__element{
+                margin: 2rem;
+                width: 80%;
+            }
+    
+        }
+    
+        
+    }
+}
